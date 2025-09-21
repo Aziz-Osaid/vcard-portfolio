@@ -61,39 +61,32 @@
             margin-bottom: 20px;
         }
 
-        .contact-info {
+        .contact-header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .contact-info {
             font-size: 16px;
             color: #000;
-        }
-
-        .social-links {
-            text-align: center;
-            margin: 15px 0;
-            font-size: 14px;
-        }
-
-        .social-links a {
-            color: #000;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 5px 10px;
-            border: 1px solid #000;
-            border-radius: 3px;
-            display: inline-block;
-            transition: background-color 0.3s;
-        }
-
-        .social-links a:hover {
-            background-color: #000;
-            color: #fff;
+            margin-bottom: 15px;
+            font-weight: 500;
         }
 
         .keywords {
             margin-top: 20px;
             font-size: 14px;
             color: #000;
+        }
+
+        .github-link {
+            color: #0366d6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .github-link:hover {
+            text-decoration: underline;
         }
 
         /* نظام الأعمدة المرن - يمكنك تغيير الرقم حسب حاجتك */
@@ -128,19 +121,35 @@
             margin-top: 8px;
             break-inside: avoid;
         }
+
+        /* Print-specific styles */
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                margin: 0;
+                padding: 20px;
+                max-width: none;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <div class="container">
-        <h1>Abedal Aziz Mohammad Rabah Suleiman Hashlamoun</h1>
-        <div class="contact-info">
-            <p>Amman, Jordan | azizhash2003@gmail.com | +962 798 539 958</p>
-        </div>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
-            <a href="https://github.com/your-username" target="_blank">GitHub</a>
+        <div class="contact-header" style="font-size: 12px;">
+            <h1>Abedal Aziz Mohammad Rabah Suleiman Hashlamoun</h1>
+            <div class="contact-info">
+                Amman, Jordan | azizhash2003@gmail.com | +962 798 539 958 | github.com/azizmrsh |
+                linkedin.com/in/aziz-hashlamoun
+            </div>
+            <!-- <div class="contact-info">
+github.com/azizmrsh | linkedin.com/in/aziz-hashlamoun
+</div> -->
         </div>
 
         <div class="section">
@@ -148,7 +157,7 @@
             <p>Motivated and adaptable Computer Science student with a strong passion for technology and innovation.
                 Proficient in foundational programming languages and technical tools, with a proven ability to learn
                 quickly and tackle challenges through analytical thinking and creative problem-solving. Eager to
-                contribute to impactful projects, grow into a System Development Engineer role, and embody Amazon’s
+                contribute to impactful projects, grow into a System Development Engineer role, and embody Amazon's
                 culture of customer obsession, curiosity, and innovation.</p>
         </div>
 
@@ -161,7 +170,9 @@
                 <li><strong>Databases:</strong> MySQL (Basic).</li>
                 <li><strong>Operating Systems:</strong> Linux/Unix, Windows.</li>
                 <li><strong>Tools:</strong> FlutterFlow, Microsoft Office, AI Tools.</li>
-
+                <li><strong>Frameworks:</strong> Laravel, Filament, Bootstrap.</li>
+                <li><strong>Libraries:</strong> mPDF, Intervention Image, Laravel Sanctum.</li>
+            </ul>
         </div>
 
         <div class="section">
@@ -206,22 +217,74 @@
 
         <div class="section">
             <h2>KEY PROJECTS</h2>
-            <h3>Responsive Web Development Project</h3>
+
+            <h3>Jorent - Property Rental Management System</h3>
+            <p><em>Final University Graduation Project</em> | <a href="https://github.com/azizmrsh/jorentv2"
+                    target="_blank" class="github-link">https://github.com/azizmrsh/jorentv2</a></p>
             <ul>
-                <li>Designed and developed a responsive website using <strong>HTML, CSS, and JavaScript</strong>,
-                    demonstrating the ability to create user-focused solutions.</li>
+                <li>Developed a comprehensive property rental management system specifically for the Jordanian market
+                    using <strong>Laravel 12.x</strong> and <strong>Filament v3</strong></li>
+                <li>Implemented multi-user system with <strong>Admin</strong>, <strong>Account Manager</strong>, and
+                    <strong>Tenant</strong> roles with granular permissions
+                </li>
+                <li>Built advanced property management features including image galleries, location-based search, and
+                    availability tracking</li>
+                <li>Created digital contract management system with <strong>Arabic-compatible PDF generation</strong>
+                    using mPDF and digital signature integration</li>
+                <li>Developed payment tracking system with automated reminders, receipt generation, and analytics
+                    dashboard</li>
+                <li>Implemented full <strong>RTL (Right-to-Left)</strong> support with complete Arabic and English
+                    localization</li>
+                <li>Utilized <strong>MySQL 8.0+</strong>, <strong>PHP 8.2+</strong>, <strong>Bootstrap 3.x</strong>, and
+                    <strong>Laravel Sanctum</strong> for authentication
+                </li>
             </ul>
 
-            <h3>Python Automation Tools</h3>
+            <h3>BMS - Digital Library Management System</h3>
+            <p><em>Current Full-time Project</em> | <a href="https://github.com/azizmrsh/BMS_v1/tree/homev2"
+                    target="_blank" class="github-link">https://github.com/azizmrsh/BMS_v1/tree/homev2</a></p>
             <ul>
-                <li>Developed small tools to automate repetitive tasks, applying scripting skills to solve problems
-                    efficiently and improve workflows.</li>
+                <li>Owner and lead developer of a comprehensive <strong>Digital Library Management System</strong> built
+                    with <strong>Filament 3</strong> and <strong>Laravel</strong>, designed to organize and manage
+                    digital book collections</li>
+                <li>Implemented advanced user & access management using <strong>Filament Shield</strong> for role-based
+                    access control with multiple user roles and granular permissions for library staff and patrons</li>
+                <li>Developed sophisticated catalog management system including book categorization, metadata
+                    management, and advanced search capabilities</li>
+                <li>Integrated comprehensive media library with <strong>Filament Spatie Media</strong> for book cover
+                    optimization, thumbnails, and organized digital asset management</li>
+                <li>Created powerful multilingual system with automated translation capabilities supporting Arabic,
+                    English, and other languages for global library accessibility</li>
+                <li>Built robust content management features for library announcements, events, and educational
+                    resources with customizable templates</li>
+                <li>Implemented advanced search and filtering system with <strong>Laravel Scout</strong> integration,
+                    faceted search capabilities, and book recommendation algorithms</li>
+                <li>Enhanced system with user impersonation for librarians, circulation statistics dashboard, and
+                    improved book management with author filtering and status tracking</li>
+                <li>Optimized performance with caching strategies, improved security for user data protection, and
+                    enhanced data integrity for library collections</li>
             </ul>
 
-            <h3>Course-Based Assignments</h3>
+            <h3>Shamela Scraper</h3>
+            <p><em>Web Scraping Automation Tool</em> | <a href="https://github.com/azizmrsh/shamela_scraper.git"
+                    target="_blank" class="github-link">https://github.com/azizmrsh/shamela_scraper.git</a></p>
             <ul>
-                <li>Explored <strong>data structures, object-oriented programming, and algorithms</strong> through
-                    academic projects, laying a strong foundation for software development.</li>
+                <li>Developed a comprehensive web scraping system for extracting data from Islamic/Arabic digital
+                    libraries</li>
+                <li>Created multiple scraper versions including <strong>enhanced_shamela_scraper.py</strong> and
+                    <strong>ultra_reliability_system.py</strong>
+                </li>
+                <li>Built both CLI and GUI interfaces using <strong>enhanced_runner_gui.py</strong> for user-friendly
+                    operation</li>
+                <li>Implemented advanced data processing with <strong>enhanced_database_manager.py</strong> and
+                    performance optimization tools</li>
+                <li>Developed comprehensive testing suite with performance benchmarks, reliability tests, and GUI
+                    testing</li>
+                <li>Created modular project structure with organized core scripts, utilities, tests, and documentation
+                </li>
+                <li>Implemented data compression and efficient storage solutions for large-scale book data extraction
+                </li>
+                <li>This scraper is actively used to support data collection for the BMS_v1 digital library project</li>
             </ul>
         </div>
 
@@ -264,10 +327,12 @@
             <h2>KEYWORDS FOR ATS</h2>
             <p>Python, Java, JavaScript, HTML, CSS, MySQL, Linux, AWS, TCP/IP, DNS, DHCP, SMTP, SNMP, Data Structures,
                 Algorithms, Object-Oriented Programming, Distributed Systems, Problem-Solving, Team Collaboration,
-                Analytical Thinking, Full-Stack Development, Networking Fundamentals.</p>
+                Analytical Thinking, Full-Stack Development, Networking Fundamentals, Laravel, Filament, PHP, Bootstrap,
+                Web Scraping, Database Management, User Authentication, Role-Based Access Control, Localization, RTL
+                Support,
+                PDF Generation, Media Management, System Administration, Performance Optimization.</p>
         </div>
     </div>
-
 </body>
 
 </html>
